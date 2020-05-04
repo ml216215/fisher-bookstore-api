@@ -47,7 +47,7 @@ namespace Fisher.Bookstore.Services
         public void UpdateAuthor(Author author)
         {
             var updateBook = db.Authors.Find(author.Id);
-            updateAuthor.Title = author.Title;
+            updateAuthor.Authors = author.Authors;
             db.Authors.Update(updateAuthor);
             db.SaveChanges();
         }
