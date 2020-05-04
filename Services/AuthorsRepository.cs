@@ -39,7 +39,7 @@ namespace Fisher.Bookstore.Services
             return db.Authors.Find(authorId);
         }
 
-        public IEnumerable<Author> GetAuthor()
+        public IEnumerable<Author> GetAuthors()
         {
             return db.Authors;
         }
