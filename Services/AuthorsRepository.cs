@@ -34,7 +34,7 @@ namespace Fisher.Bookstore.Services
             db.SaveChanges();
         }
 
-        public Book GetAuthor(int authorId)
+        public Author GetAuthor(int authorId)
         {
             return db.Authors.Find(authorId);
         }
