@@ -37,7 +37,7 @@ namespace Fisher.Bookstore.Controllers
         public IActionResult Post([FromBody]Book book)
         {
             var bookId = booksRepository.AddBook(book);
-            return Created($"https://localhost:5001/api/books/{bookId}", book);
+            return Created("https://localhost:5001/api/books/{bookId}", book);
         }
 
         [HttpPut("{bookId}")]
