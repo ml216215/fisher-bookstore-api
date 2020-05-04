@@ -23,9 +23,9 @@ namespace Fisher.Bookstore
         {
             services.AddControllers();
             services.AddCors();
-            services.AddDbContext<BookstoreContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("BookstoreContext"))
-            );
+            //services.AddDbContext<BookstoreContext>(options =>
+                //options.UseNpgsql(Configuration.GetConnectionString("BookstoreContext"))
+            //);
             services.AddScoped<IBooksRepository, BooksRepository>();
             services.AddSingleton<IBooksRepository, TestBooksRepository>();
         }
