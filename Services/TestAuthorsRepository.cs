@@ -47,7 +47,7 @@ namespace Fisher.Bookstore.Services
             return authors.Values;
         }
 
-        public IEnumerable<Book> GetBooksByAuthor(int authorId)
+        public IEnumerable<Book> GetAuthors(int authorId)
         {
             throw new System.NotImplementedException();
         }
